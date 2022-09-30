@@ -5,7 +5,7 @@ def indice_stricte_croissance(liste):
   assert n>=2 and liste[0]<liste[n-1], 'Pre-condition'
   i = 0
   for y in range(1,n):
-    if liste[y] < liste[y-1]: i +=1
+    if liste[y] > liste[y-1]: i = y
      
       
   ...
@@ -23,6 +23,9 @@ def test_indice_stricte_croissance():
 def indice_minimum_local(liste):
   n = len(liste)
   assert n>=3 and liste[0]>=liste[1] and liste[n-2]<=liste[n-1], 'Pre-condition'
+  i = 0
+  for y in range (1,n):
+    if liste[y] < liste[y-1] i=y
   ...
   assert 1<=i<n-1 and liste[i-1]>=liste[i] and liste[i]<=liste[i+1], 'Post-condition'
   return i
