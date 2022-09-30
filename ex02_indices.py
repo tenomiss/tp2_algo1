@@ -3,6 +3,10 @@
 def indice_stricte_croissance(liste):
   n = len(liste)
   assert n>=2 and liste[0]<liste[n-1], 'Pre-condition'
+  i = 0
+  for y in range(1,n):
+     
+      
   ...
   assert 1<=i<n and liste[i-1]<liste[i], 'Post-condition'
   return i
