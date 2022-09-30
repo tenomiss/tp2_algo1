@@ -17,7 +17,9 @@ def minimiser_somme_distance(liste):
     if i < min : min = 1
     if i > max : max = 1
   
-  
+  v = min
+  for i in range(min,max):
+    
     
   ...
   assert (
