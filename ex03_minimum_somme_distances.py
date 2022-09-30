@@ -11,6 +11,14 @@ def somme_distances(liste,v):
 def minimiser_somme_distance(liste):
   n = len(liste)
   assert n>0, 'Pre-condition'
+  min = liste[0]
+  max = liste[0]
+  for i in liste :
+    if i < min : min = 1
+    if i > max : max = 1
+  
+  
+    
   ...
   assert (
     somme_distances(liste,v)<=somme_distances(liste,v-1) 
