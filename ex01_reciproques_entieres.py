@@ -2,6 +2,11 @@
 
 def racine_entiere(n):
   assert n>=0, 'Pre-condition'
+  a= 0 
+  while n>=2**(k+1):
+    a = a+1
+    return a 
+
   ...
   assert a>=0 and a**2<=n<(a+1)**2, 'Post-condition'
   return a
@@ -14,6 +19,10 @@ def test_racine_entiere():
 
 def log2_entier(n):
   assert n>0, 'Pre-condition'
+  k = 0
+  while n>=2**(k+1):
+    k += 1
+    
   ...
   assert k>=0 and 2**k<=n<2**(k+1), 'Post-condition'
   return k
@@ -28,6 +37,7 @@ def logb_entier(n,b):
   assert n>0 and b>=2, 'Pre-condition'
   ...
   assert k>=0 and b**k<=n<b**(k+1), 'Post-condition'
+  
   return k
 
 def test_logb_entier():
